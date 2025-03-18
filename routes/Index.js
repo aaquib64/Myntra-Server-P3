@@ -7,9 +7,11 @@ const controller = require("../Controller/Index");     // Import controller
 
 router.get("/products", controller.getAllProducts);
 
-router.get("/products/:names", controller.getAllProductstByName);
+router.get("/:gender/:names", controller.getAllProductstByName);
 
-router.get("/getAllRestaurantByGender/:gender", controller.getAllRestaurantByGender);
+router.get("/:gender", controller.getAllRestaurantByGender);
+
+router.get("/:category", controller.getAllRestaurantByCategory);
 
 //router.get('/getMealTypes', controller.getAllMealTypes);
 
