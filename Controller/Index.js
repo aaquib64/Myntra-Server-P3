@@ -36,7 +36,7 @@ exports.getAllRestaurantByCategory = (req, res) => {
     (rest) => rest.category == Category
   );
 
-  if (ProductByGen.length > 0) {
+  if (ProductByCat.length > 0) {
     res.status(200).json(ProductByCat );
   } else {
     res.status(404).json({ message: "please Provide Valid Category" });
