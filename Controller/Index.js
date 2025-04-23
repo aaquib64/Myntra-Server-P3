@@ -1,4 +1,4 @@
-const productList = require("../Models/Products.json");
+const productList = require("../Models/Products");
 
 exports.getAllProducts = (req, res) => {
   res.status(200).json(productList);
